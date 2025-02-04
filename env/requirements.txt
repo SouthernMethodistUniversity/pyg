@@ -1,0 +1,9 @@
+--index-url https://download.pytorch.org/whl/cu118
+--extra-index-url https://pypi.org/simple
+
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+torch_geometric==2.6.1
+jupyterlab
+

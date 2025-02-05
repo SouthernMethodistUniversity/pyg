@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Overview &#8212; Graph Neural Networks (GNNs) using PyTorch-Geometric (PyG)</title>
+    <title>PyG Introduction &#8212; Graph Neural Networks (GNNs) using PyTorch-Geometric (PyG)</title>
   
   
   
@@ -60,10 +60,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Environment Setup" href="setup.html" />
+    <link rel="prev" title="HPC Portal Jupyter Lab Session" href="ood_jupyter.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +115,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +134,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -163,16 +161,16 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Overview
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="setup.html">Environment Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ood_jupyter.html">HPC Portal Jupyter Lab Session</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">PyG Introduction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PyG Introduction</a></li>
 </ul>
 
     </div>
@@ -249,7 +247,7 @@
       
       
       
-      <li><a href="https://github.com/SouthernMethodistUniversity/pyg/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/SouthernMethodistUniversity/pyg/issues/new?title=Issue%20on%20page%20%2Ftutorials.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +277,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/tutorials.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,7 +353,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Overview</h1>
+    <h1>PyG Introduction</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,8 +363,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials">Tutorials</a></li>
 </ul>
             </nav>
         </div>
@@ -378,42 +378,80 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
-<p>Welcome to the SMU <a class="reference external" href="https://www.smu.edu/provost/odonnell-institute">O’Donnell Data Science and Research Computing
-Institute</a> (ODSRCI) workshop on
-PyTorch Geometric (PyG), a powerful library for deep learning on graphs and
-irregular structures. PyG extends PyTorch with optimized data structures and
-operations tailored for graph-based learning, enabling efficient implementation
-of Graph Neural Networks (GNNs). In this session, we will explore PyG’s core
-functionalities, including data handling, message passing, and model building
-for tasks such as node classification, link prediction, and graph
-classification. Whether you’re new to graph-based deep learning or looking to
-enhance your PyTorch expertise, this workshop will provide hands-on guidance and
-practical applications to help you leverage PyG effectively.</p>
-<section id="materials">
-<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/pyg/">ODSRCI Workshop: PyG</a></p></li>
-<li><p><a class="reference external" href="https://github.com/SouthernMethodistUniversity/pyg">ODSRCI Workshop: PyG Repo</a></p></li>
-<li><p><a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/">PyG</a></p></li>
-</ul>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="_images/pyg_qr.png"><img alt="QR code for PyG workshop website." src="_images/pyg_qr.png" style="width: 328.0px; height: 328.0px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">QR code for PyG workshop website.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
+  <section class="tex2jax_ignore mathjax_ignore" id="pyg-introduction">
+<h1>PyG Introduction<a class="headerlink" href="#pyg-introduction" title="Link to this heading">#</a></h1>
+<p>PyTorch Geometric (PyG) is a powerful extension of PyTorch designed for deep
+learning on irregular data structures such as graphs and point clouds. It
+provides an efficient and flexible framework for implementing and training Graph
+Neural Networks (GNNs), enabling researchers and practitioners to handle
+large-scale graph data with ease. PyG offers a wide range of functionalities,
+including scalable data handling, optimized message passing operations, and
+pre-implemented GNN architectures, making it ideal for tasks like node
+classification, link prediction, and graph clustering. Built on top of PyTorch,
+it leverages automatic differentiation and GPU acceleration, allowing seamless
+integration with existing machine learning workflows. The official documentation
+provides a comprehensive guide for getting started, including installation
+instructions, fundamental concepts, and hands-on examples to help users quickly
+become proficient in applying GNNs to real-world problems.</p>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
 </section>
-<section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="setup.html">Environment Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ood_jupyter.html">HPC Portal Jupyter Lab Session</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">PyG Introduction</a></li>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html">Introduction by
+Example</a>
+section of the PyTorch Geometric documentation provides a hands-on walkthrough
+of the key functionalities of the library by constructing and training a simple
+GNN. It begins by demonstrating how to define a basic graph structure using the
+<code class="docutils literal notranslate"><span class="pre">torch_geometric.data.Data</span></code> class, highlighting the importance of node features,
+edge indices, and labels. The section then introduces data loading utilities,
+particularly how datasets are handled within PyG using
+<code class="docutils literal notranslate"><span class="pre">torch_geometric.datasets</span></code>. Following this, it walks through the creation of a
+simple GNN model using PyTorch Geometric’s <code class="docutils literal notranslate"><span class="pre">torch_geometric.nn</span></code> module,
+showcasing layers such as GCNConv for message passing. The tutorial proceeds by
+setting up a training loop, including loss computation and backpropagation, to
+illustrate how a GNN can be trained efficiently on graph data. Finally, the
+section provides a brief evaluation of the model’s performance, demonstrating
+how predictions can be made and analyzed. Overall, this introduction serves as a
+concise yet comprehensive guide to understanding the fundamental workflow of
+using PyG for graph-based deep learning.</p>
+</section>
+<section id="notebooks">
+<h2>Notebooks<a class="headerlink" href="#notebooks" title="Link to this heading">#</a></h2>
+<p>The
+<a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/get_started/colabs.html">Notebooks</a>
+section of the PyTorch Geometric documentation provides interactive, executable
+Jupyter notebooks that serve as practical tutorials for various graph learning
+tasks using PyG. These notebooks cover a range of topics, including an
+introduction to PyG’s core functionalities, implementing GNNs for node
+classification, and performing more advanced tasks such as link prediction and
+graph generation. Each notebook walks users through key concepts with
+step-by-step explanations and code, making it easier to understand and apply
+PyG’s features in real-world scenarios. The section also includes examples of
+working with benchmark graph datasets, utilizing different GNN architectures,
+and optimizing model performance. Importantly, these notebooks can run on SMU
+HPC systems.</p>
+</section>
+<section id="tutorials">
+<h2>Tutorials<a class="headerlink" href="#tutorials" title="Link to this heading">#</a></h2>
+<p>The tutorials in PyTorch Geometric offer in-depth guidance on key aspects of
+designing and deploying GNNs for complex graph-based learning tasks. These
+tutorials cover the <em>Design of Graph Neural Networks</em>, providing insights into
+various GNN architectures and optimization strategies to improve model
+performance. The <em>Working with Graph Datasets</em> section delves into handling,
+preprocessing, and efficiently loading large-scale graph data. The <em>Use-Cases &amp;
+Applications</em> tutorial explores real-world implementations of GNNs in domains
+such as social networks, molecular analysis, and recommendation systems. Lastly,
+the <em>Distributed Training</em> tutorial focuses on scaling GNN models across multiple
+GPUs or machines to handle large datasets efficiently. Together, these tutorials
+equip users with the knowledge to advance from basic implementations to
+scalable, high-performance graph learning solutions.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/tutorial/gnn_design.html">Design of Graph Neural Networks</a></p></li>
+<li><p><a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/tutorial/dataset.html">Working with Graph Datasets</a></p></li>
+<li><p><a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/tutorial/application.html">Use-Cases &amp; Applications</a></p></li>
+<li><p><a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/tutorial/distributed.html">Distributed Training</a></p></li>
 </ul>
-</div>
 </section>
 </section>
 
@@ -447,14 +485,14 @@ practical applications to help you leverage PyG effectively.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="setup.html"
-       title="next page">
+    <a class="left-prev"
+       href="ood_jupyter.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Environment Setup</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">HPC Portal Jupyter Lab Session</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -473,8 +511,10 @@ practical applications to help you leverage PyG effectively.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tutorials">Tutorials</a></li>
 </ul>
   </nav></div>
 

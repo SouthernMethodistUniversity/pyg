@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Overview &#8212; Graph Neural Networks (GNNs) using PyTorch-Geometric (PyG)</title>
+    <title>Environment Setup &#8212; Graph Neural Networks (GNNs) using PyTorch-Geometric (PyG)</title>
   
   
   
@@ -60,10 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'setup';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Environment Setup" href="setup.html" />
+    <link rel="next" title="HPC Portal Jupyter Lab Session" href="ood_jupyter.html" />
+    <link rel="prev" title="Overview" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -136,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -163,14 +162,14 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Overview
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="setup.html">Environment Setup</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Environment Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ood_jupyter.html">HPC Portal Jupyter Lab Session</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorials.html">PyG Introduction</a></li>
 </ul>
@@ -249,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/SouthernMethodistUniversity/pyg/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/SouthernMethodistUniversity/pyg/issues/new?title=Issue%20on%20page%20%2Fsetup.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -279,7 +278,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/setup.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,7 +354,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Overview</h1>
+    <h1>Environment Setup</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,8 +364,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial Setup</a></li>
 </ul>
             </nav>
         </div>
@@ -378,42 +376,46 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h1>
-<p>Welcome to the SMU <a class="reference external" href="https://www.smu.edu/provost/odonnell-institute">O’Donnell Data Science and Research Computing
-Institute</a> (ODSRCI) workshop on
-PyTorch Geometric (PyG), a powerful library for deep learning on graphs and
-irregular structures. PyG extends PyTorch with optimized data structures and
-operations tailored for graph-based learning, enabling efficient implementation
-of Graph Neural Networks (GNNs). In this session, we will explore PyG’s core
-functionalities, including data handling, message passing, and model building
-for tasks such as node classification, link prediction, and graph
-classification. Whether you’re new to graph-based deep learning or looking to
-enhance your PyTorch expertise, this workshop will provide hands-on guidance and
-practical applications to help you leverage PyG effectively.</p>
-<section id="materials">
-<h2>Materials<a class="headerlink" href="#materials" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://southernmethodistuniversity.github.io/pyg/">ODSRCI Workshop: PyG</a></p></li>
-<li><p><a class="reference external" href="https://github.com/SouthernMethodistUniversity/pyg">ODSRCI Workshop: PyG Repo</a></p></li>
-<li><p><a class="reference external" href="https://pytorch-geometric.readthedocs.io/en/latest/">PyG</a></p></li>
-</ul>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="_images/pyg_qr.png"><img alt="QR code for PyG workshop website." src="_images/pyg_qr.png" style="width: 328.0px; height: 328.0px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">QR code for PyG workshop website.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="setup.html">Environment Setup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ood_jupyter.html">HPC Portal Jupyter Lab Session</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials.html">PyG Introduction</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="environment-setup">
+<h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">#</a></h1>
+<p>PyTorch Geometric (PyG) and its dependencies can be installed using various
+methods, including PyPI (Python Package Index), Anaconda, and Docker. Each
+method provides flexibility depending on the user’s environment and preference.
+In this setup, we will use a Python virtual environment to ensure an isolated
+and reproducible workspace, and we will install PyG and its required packages
+directly from PyPI. This approach simplifies dependency management and ensures
+compatibility with the latest stable releases.</p>
+<p>A Makefile simplifies the installation of packages in the virtual environment by
+automating the setup process with predefined commands. It ensures that all
+dependencies are installed consistently and efficiently, reducing manual effort.
+Once the virtual environment is set up and the necessary packages are installed,
+an Lmod module can be used to load the environment as needed. Lmod allows users
+to manage and switch between multiple environments easily, ensuring that the
+correct dependencies are available without modifying global system settings. By
+leveraging both a Makefile for installation and Lmod for environment management,
+users can maintain a reproducible and flexible workflow.</p>
+<section id="initial-setup">
+<h2>Initial Setup<a class="headerlink" href="#initial-setup" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Go to the <a class="reference external" href="https://hpc.m3.smu.edu/">SMU HPC Portal</a>.</p></li>
+<li><p>At the top of the page select “Clusters” and then “M3 Shell Access”.</p></li>
+<li><p>Log into the shell if needed, which may require Duo authentication and your
+SMU password. Note that you will not see the password as it is being typed.</p></li>
+<li><p>Use the following commands to setup your own environment:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>tmux
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$HOME</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/SouthernMethodistUniversity/pyg.git
+<span class="nb">cd</span><span class="w"> </span>pyg/env
+make<span class="w"> </span>install
+</pre></div>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the terminal shell session is closed just repeat steps 2 and 3 and then
+type <code class="docutils literal notranslate"><span class="pre">tmux</span> <span class="pre">a</span></code> to connect to your previous sessions which is still running.</p>
+</div>
+</li>
+</ol>
 </section>
 </section>
 
@@ -447,12 +449,21 @@ practical applications to help you leverage PyG effectively.</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Overview</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="setup.html"
+       href="ood_jupyter.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Environment Setup</p>
+        <p class="prev-next-title">HPC Portal Jupyter Lab Session</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -473,8 +484,7 @@ practical applications to help you leverage PyG effectively.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#materials">Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initial-setup">Initial Setup</a></li>
 </ul>
   </nav></div>
 

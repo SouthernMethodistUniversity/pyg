@@ -18,11 +18,13 @@ practical applications to help you leverage PyG effectively.
 - [ODSRCI Workshop: PyG Repo](https://github.com/SouthernMethodistUniversity/pyg)
 - [PyG](https://pytorch-geometric.readthedocs.io/en/latest/)
 
+## Workshop Website
+
 ```{figure} pyg_qr.png
 :scale: 50 %
 :alt: QR code for PyG workshop website.
 
-QR code for PyG workshop website.
+PyG workshop website: `https://southernmethodistuniversity.github.io/pyg/`.
 ```
 
 ## Table of Contents

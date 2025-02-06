@@ -52,6 +52,10 @@ working with benchmark graph datasets, utilizing different GNN architectures,
 and optimizing model performance. Importantly, these notebooks can run on SMU
 HPC systems.
 
+:::{tip} The Colab notebooks can be run on SMU HPC systems by either copying
+pasting relavant code or by downloading (File; Download; Download .ipynb) and
+then uploading the notebooks to your HPC Portal Jupyter Lab instance. :::
+
 ## Tutorials
 
 The tutorials in PyTorch Geometric offer in-depth guidance on key aspects of

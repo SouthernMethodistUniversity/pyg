@@ -12,14 +12,6 @@ classification. Whether you’re new to graph-based deep learning or looking to
 enhance your PyTorch expertise, this workshop will provide hands-on guidance and
 practical applications to help you leverage PyG effectively.
 
-## Overview
-
-## Key Topics
-
-## Getting Started
-
-## Resources
-
 ## Contribution
 
 This workshop is open for contributions from the community. You can suggest

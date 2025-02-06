@@ -378,8 +378,8 @@
 <li><p><strong>Select Python Environment</strong>: <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">Environment</span> <span class="pre">-</span> <span class="pre">only</span> <span class="pre">use</span> <span class="pre">what</span> <span class="pre">is</span> <span class="pre">specified</span> <span class="pre">below</span></code></p></li>
 <li><p><strong>Custom Environment Settings</strong>:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>purge
-module<span class="w"> </span>use<span class="w"> </span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/distributed_python/env
-module<span class="w"> </span>load<span class="w"> </span>distributed_python
+module<span class="w"> </span>use<span class="w"> </span><span class="si">${</span><span class="nv">HOME</span><span class="si">}</span>/pyg/env
+module<span class="w"> </span>load<span class="w"> </span>pyg
 </pre></div>
 </div>
 </li>
@@ -387,6 +387,11 @@ module<span class="w"> </span>load<span class="w"> </span>distributed_python
 <li><p><strong>Cores per node</strong>: 8</p></li>
 <li><p><strong>Memory</strong>: 32</p></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>A different partition, core, memory, and GPU configuration maybe required
+based node availability.</p>
+</div>
 </li>
 </ol>
 </section>

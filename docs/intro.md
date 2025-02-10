@@ -27,6 +27,12 @@ practical applications to help you leverage PyG effectively.
 PyG workshop website: `https://southernmethodistuniversity.github.io/pyg/`.
 ```
 
+## Recording
+
+A screen recording of the workshop is available
+[here](https://smu.box.com/s/er4hf1ek4hji89pxmtz10awcy1v2obby) for those with
+SMU credentials.
+
 ## Table of Contents
 
 ```{tableofcontents}

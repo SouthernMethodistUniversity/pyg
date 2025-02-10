@@ -6,4 +6,4 @@ torchvision==0.19.1
 torchaudio==2.4.1
 torch_geometric==2.6.1
 jupyterlab
-
+scipy
